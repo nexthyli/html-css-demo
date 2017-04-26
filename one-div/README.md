@@ -1,7 +1,10 @@
 #one-div
-###What is one-div？
+
+### What is one-div？
+
 基于CSS3的特性实现只用一个DIV绘制不规则图形
-###What can one-div do？
+
+### What can one-div do？
 
 - [codepen-demos](http://codepen.io/Nexthy/)
 - [singlediv](http://a.singlediv.com/)
@@ -12,27 +15,27 @@
 - [species-in-pieces](http://species-in-pieces.com/)
 - [one-div](http://one-div.com/)
 
-###How to create one-div？
+### How to create one-div？
 
 我们需要了解一下CSS3的部分特性
 
-![Alt text](./1493195434879.png)
+![cover](images/box.png)
 
-#####浏览器支持
+##### 浏览器支持
 
 - **All browser**
 
-#####边框(border)
+##### 边框(border)
 
-![Alt text](./1493195593740.png)
+![cover](images/border1.png)
 
-![Alt text](./1493195673228.png)
+![cover](images/border2.png)
 
-![Alt text](./1493195686105.png)
+![cover](images/border3.png)
 
-#####伪元素(:before & :after)
+##### 伪元素(:before & :after)
 顾名思义，它创建了一个虚假的元素，并插入到目标元素内容之前或之后
-#####浏览器支持
+##### 浏览器支持
 
 - **Chrome 2+**
 - **Firefox 3.5+ (3.0 had partial support)**
@@ -41,12 +44,12 @@
 - **IE8+ (with some minor bugs)**
 - **All mobile browser**
 
-![Alt text](./1493195983781.png)
+![cover](images/afterBefore1.png)
 
-![Alt text](./1493196001100.png)
+![cover](images/afterBefore2.png)
 
-#####圆角(border-radius)
-#####浏览器支持
+##### 圆角(border-radius)
+##### 浏览器支持
 - **Chrome 4.0+**
 - **Firefox 2.0+** 
 - **Safari 3.1+**
@@ -55,10 +58,10 @@
 - **Ios browser(all)**
 - **Android browser(2.1&2.3 with some minor bugs)**
 
-![Alt text](./1493196133300.png)
+![cover](images/border-radius.png)
 
-#####变换(transform)
-#####浏览器支持
+##### 变换(transform)
+##### 浏览器支持
 -  **Chrome 4.0+**
 - **Firefox 3.5+ **
 - **Safari 6.0+**
@@ -67,10 +70,10 @@
 - **Ios browser 6.0+**
 - **Android browser 2.1+**
 
-![Alt text](./1493196256711.png)
+![cover](images/transform.png)
 
-#####线性渐变(linear-gradient)
-#####浏览器支持
+##### 线性渐变(linear-gradient)
+##### 浏览器支持
 - **Chrome 10.0+**
 - **Firefox 3.6+ **
 - **Safari 5.1+**
@@ -79,10 +82,10 @@
 - **Ios browser 5.0+**
 - **Android browser 4.0+**
 
-![Alt text](./1493196329137.png)
+![cover](images/line-grandient.png)
 
-#####径向渐变(radial-gradient)
-#####浏览器支持
+##### 径向渐变(radial-gradient)
+##### 浏览器支持
 - **Chrome 10.0+**
 - **Firefox 3.6+ **
 - **Safari 5.1+**
@@ -91,11 +94,11 @@
 - **Ios browser 5.0+**
 - **Android browser 4.0+**
 
-![Alt text](./1493196400275.png)
+![cover](images/radial-grandient.png)
 
 
-#####阴影(box-shadow)
-#####浏览器支持
+##### 阴影(box-shadow)
+##### 浏览器支持
 - **Chrome 4.0+**
 - **Firefox 4.0+ **
 - **Safari 3.1+**
@@ -104,49 +107,112 @@
 - **Ios browser 3.2+**
 - **Android browser 2.1+**
 
-![Alt text](./1493196470134.png)
+![cover](images/box-shadow.png)
 
 
-###让我们组合这些特性去创造不同
+### 让我们组合这些特性去创造不同
 
-![Alt text](./1493196518698.png)
+![cover](images/example1.png)
 
-![Alt text](./1493196528603.png)
+![cover](images/example2.png)
 
-![Alt text](./1493196542208.png)
+![cover](images/example3.png)
 
-![Alt text](./1493196553418.png)
+![cover](images/example4.png)
 
-![Alt text](./1493196561835.png)
+![cover](images/example5.png)
 
-![Alt text](./1493196570574.png)
+![cover](images/example6.png)
 
-![Alt text](./1493196580111.png)
+![cover](images/example7.png)
 
-![Alt text](./1493196603720.png)
+![cover](images/example8.png)
 
-![Alt text](./1493196613576.png)
+![cover](images/example9.png)
 
-![Alt text](./1493196624826.png)
+![cover](images/example10.png)
 
-![Alt text](./1493196634723.png)
+![cover](images/example11.png)
 
-![Alt text](./1493196646580.png)
+![cover](images/example12.png)
 
-![Alt text](./1493196661860.png)
+![cover](images/example13.png)
 
-![Alt text](./1493196675152.png)
+![cover](images/example14.png)
 
-![Alt text](./1493196686946.png)
+![cover](images/example15.png)
 
-![Alt text](./1493196696513.png)
+![cover](images/example16.png)
 
-![Alt text](./1493196705602.png)
+![cover](images/example17.png)
 
-![Alt text](./1493196716565.png)
+![cover](images/example18.png)
 
-![Alt text](./1493196741129.png)
+![cover](images/example19.png)
 
+![cover](images/example20.png)
+
+![cover](images/example21.png)
+
+![cover](images/example22.png)
+
+![cover](images/example23.png)
+
+![cover](images/example24.png)
+
+![cover](images/example25.png)
+
+![cover](images/example26.png)
+
+![cover](images/example27.png)
+
+![cover](images/example28.png)
+
+![cover](images/example29.png)
+
+![cover](images/example30.png)
+
+![cover](images/example31.png)
+
+![cover](images/example32.png)
+
+![cover](images/example33.png)
+
+![cover](images/example34.png)
+
+![cover](images/example35.png)
+
+![cover](images/example36.png)
+
+![cover](images/example37.png)
+
+![cover](images/example38.png)
+
+![cover](images/example39.png)
+
+![cover](images/example40.png)
+
+![cover](images/example41.png)
+
+![cover](images/example42.png)
+
+![cover](images/example43.png)
+
+![cover](images/example44.png)
+
+### 渲染效率
+**简单icon对比**
+| 方式 |   渲染 |   绘制  |network |
+| :-------- | --------:| :------: | :------: |
+| One-div |   渲染: 0.339 ms |   绘制: 0.216 ms  |network : 无 |
+| base64  |   渲染: 0.469 ms |   绘制: 0.322 ms  |network : 1ms |
+| 网络请求 |   渲染: 0.310 ms |   绘制: 1.514 ms  |network : 158ms |
+
+**CSS特性对比**
+| 方式 |   渲染 |   绘制  |network |
+| :-------- | --------:| :------: | :------: |
+| 不使用渐变、阴影等复杂特性 |   渲染: 0.276 ms |   绘制: 0.147 ms  |network : 无 |
+| 使用渐变、阴影等复杂特性   |   渲染: 0.350 ms |   绘制: 0.283 ms  |network : 无 |
 
 
 
