@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-circular</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*圆形*/
+    /*圆形 主要利用了css3.0的圆角属性 border-radius 适当的调整大小会有不同的效果*/
+    /*
+1、设置或检索对象使用圆角边框。提供2个参数，2个参数以“/”分隔，每个参数允许设置1~4个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，如第2个参数省略，则默认等于第1个参数
+2、水平半径：如果提供全部四个参数值，将按上左(top-left)、上右(top-right)、下右(bottom-right)、下左(bottom-left)的顺序作用于四个角。
+3、如果只提供一个，将用于全部的于四个角。
+4、如果提供两个，第一个用于上左(top-left)、下右(bottom-right)，第二个用于上右(top-right)、下左(bottom-left)。
+5、如果提供三个，第一个用于上左(top-left)，第二个用于上右(top-right)、下左(bottom-left)，第三个用于下右(bottom-right)。
+6、垂直半径也遵循以上4点。
+*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -o-border-radius: 50px;
+        -ms-border-radius: 50px;
+        border-radius: 50px;
+        background: #333;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

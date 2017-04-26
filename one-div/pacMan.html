@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-pacMan</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*食逗人吃豆子*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 0px;
+        height: 0px;
+        border-right: 60px solid transparent;
+        border-top: 60px solid #333;
+        border-left: 60px solid #333;
+        border-bottom: 60px solid #333;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        -o-border-radius: 60px;
+        -ms-border-radius: 60px;
+        border-radius: 60px;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 180px;
+        height: 120px;
+        /* background: rgba(0,0,0,.6); */
+        background-image: radial-gradient(circle at 10% 45%, #333 10px, transparent 11px), radial-gradient(circle at 40% 30%, #333 10px, transparent 11px), radial-gradient(circle at 70% 50%, #333 10px, transparent 11px);
+        position: absolute;
+        top: -60px;
+        left: 60px;
+    }
+    
+    div:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        position: absolute;
+        top: -40px;
+        left: -15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

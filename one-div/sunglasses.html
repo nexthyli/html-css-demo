@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-sunglasses</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*墨镜*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 60px;
+        height: 50px;
+        background: #333;
+        border-radius: 30px 20px 50px 40px;
+        box-shadow: -30px 0 0 -24.5px #333;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 60px;
+        height: 50px;
+        background: #333;
+        border-radius: 20px 30px 40px 50px;
+        box-shadow: 30px 0 0 -24.5px #333;
+        position: absolute;
+        left: 70px;
+        top: 0px;
+    }
+    
+    div:after {
+        content: "";
+        width: 20px;
+        height: 10px;
+        background: transparent;
+        border-top: 1px solid #333;
+        /* border-bottom: 1px solid #333; */
+        border-radius: 9px 9px 0 0;
+        position: absolute;
+        left: 55px;
+        top: 13px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

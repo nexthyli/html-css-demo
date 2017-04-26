@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-dropsWater</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*水滴*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 80px;
+        height: 80px;
+        background: #333;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -o-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 60px solid #333;
+        border-left: 36px solid transparent;
+        border-right: 36px solid transparent;
+        position: absolute;
+        top: -38px;
+        left: 4px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

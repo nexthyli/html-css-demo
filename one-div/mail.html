@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-mail</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*信封*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 0px;
+        height: 0px;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid #333;
+        border-left: 60px solid #333;
+        border-right: 60px solid #333;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 40px solid #333;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        position: absolute;
+        border-radius: 0 5px 5px 0;
+        top: -41px;
+        left: -60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

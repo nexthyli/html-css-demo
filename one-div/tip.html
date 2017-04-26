@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-tip</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*提示框*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 150px;
+        height: 80px;
+        background: #333;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-right: 15px solid #333;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 30px;
+        left: -15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

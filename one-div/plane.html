@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-plane</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*飞机*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 6px;
+        height: 80px;
+        background: #333;
+        border-radius: 100%;
+        transform: rotate(45deg);
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 10px solid #333;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        left: -27px;
+        top: 25px;
+    }
+    
+    div:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 5px solid #333;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position: absolute;
+        left: -13px;
+        top: 70px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

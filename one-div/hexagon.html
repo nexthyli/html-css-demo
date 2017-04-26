@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-hexagon</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /* 正倒三角形拼接*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid #333;
+        position: relative;
+    }
+    
+    div:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid #333;
+        position: absolute;
+        top: 35px;
+        left: -50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

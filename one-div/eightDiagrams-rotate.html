@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-eightDiagrams-rotate</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*八卦阵*/
+    /*先用椭圆撑开border-bottom,变成上下半圆，然后加两个同心圆*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 120px;
+        height: 60px;
+        background: #fff;
+        border-radius: 100%;
+        border-top: 2px solid #333;
+        border-right: 2px solid #333;
+        border-bottom: 62px solid #333;
+        border-left: 2px solid #333;
+        position: relative;
+        -webkit-animation: rotate 1.2s infinite linear;
+        -moz-animation: rotate 1.2s infinite linear;
+        -ms-animation: rotate 1.2s infinite linear;
+        -o-animation: rotate 1.2s infinite linear;
+        animation: rotate 1.2s infinite linear;
+    }
+    
+    div:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: #eee;
+        border-radius: 100%;
+        border: 22px solid #333;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    
+    div:after {
+        content: "";
+        background: #333;
+        border: 22px solid #fff;
+        border-radius: 100%;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    @keyframes "rotate" {
+        to {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-moz-keyframes rotate {
+        to {
+            -moz-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes "rotate" {
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-ms-keyframes "rotate" {
+        to {
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-o-keyframes "rotate" {
+        to {
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

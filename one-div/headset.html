@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-headset</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*耳机*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 5px solid #333;
+        border-bottom: none;
+        border-radius: 100% 100% 0 0;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 8px;
+        height: 16px;
+        background: #333;
+        position: absolute;
+        left: 2px;
+        top: 42px;
+    }
+    
+    div:after {
+        content: "";
+        width: 8px;
+        height: 16px;
+        background: #333;
+        position: absolute;
+        left: 40px;
+        top: 42px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

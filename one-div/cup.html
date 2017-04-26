@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-cup</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*饮料*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 25px;
+        height: 0px;
+        border-top: 60px solid #333;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 40px;
+        height: 4px;
+        background: #333;
+        border-radius: 3px 3px 1px 1px;
+        position: absolute;
+        left: -7.5px;
+        top: -65px;
+    }
+    
+    div:after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        transform: rotate(-65deg);
+        background: #333;
+        position: absolute;
+        left: 12px;
+        top: -70px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

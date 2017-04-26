@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-location</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*定位*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 100%;
+        border: 20px solid #333;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 43px solid #333;
+        border-right: 30px solid transparent;
+        border-left: 30px solid transparent;
+        position: absolute;
+        top: 33.4px;
+        left: -15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

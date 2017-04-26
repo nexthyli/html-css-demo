@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-smilingFace</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*笑脸*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 100px;
+        height: 50px;
+        background: #fff;
+        border-top: 60px solid #333;
+        border-bottom: 10px solid #333;
+        border-left: 10px solid #333;
+        border-right: 10px solid #333;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -o-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -o-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        background: #fff;
+        position: absolute;
+        top: -35px;
+        left: 20px;
+    }
+    
+    div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -o-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        background: #fff;
+        position: absolute;
+        top: -35px;
+        left: 60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

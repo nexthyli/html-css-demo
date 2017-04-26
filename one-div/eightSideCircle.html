@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-eightSideCircle</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*八边花*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 200px;
+        height: 200px;
+        background: #333;
+        -webkit-border-radius: 50x;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background: #333;
+        -webkit-border-radius: 50x;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

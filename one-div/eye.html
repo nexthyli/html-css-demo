@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-eye</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*眼睛*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 100px;
+        height: 100px;
+        background: #333;
+        -webkit-border-radius: 90px 0px;
+        -moz-border-radius: 90px 0px;
+        -o-border-radius: 90px 0px;
+        -ms-border-radius: 90px 0px;
+        border-radius: 90px 0px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #333;
+        border: 10px solid #fff;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -o-border-radius: 30px;
+        -ms-border-radius: 30px;
+        border-radius: 100%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

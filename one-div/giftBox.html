@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-giftBox</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*礼物盒*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 80px;
+        height: 50px;
+        background: #333;
+        position: relative;
+        background-image: linear-gradient(to bottom, transparent 23px, #fff 23px, #fff 27px, transparent 27px), linear-gradient(to right, transparent 38px, #fff 38px, #fff 42px, transparent 42px);
+    }
+    
+    div:before {
+        content: "";
+        width: 90px;
+        height: 10px;
+        background: #333;
+        background-image: linear-gradient(to right, transparent 43px, #fff 43px, #fff 47px, transparent 47px);
+        position: absolute;
+        left: -5px;
+        top: -10px;
+    }
+    
+    div:after {
+        content: "";
+        width: 80px;
+        height: 50px;
+        /* background:rgba(0,0,0,.6); */
+        transform: rotate(42deg);
+        background-image: radial-gradient(ellipse 10px 5px at 40% 80%, #fff 10px, #333 12px, transparent 14px), radial-gradient(ellipse 5px 10px at 60% 52%, #fff 5px, #333 6px, transparent 7px);
+        position: absolute;
+        left: 5px;
+        top: -50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

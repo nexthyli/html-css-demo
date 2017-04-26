@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-eightDiagrams</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*八卦*/
+    /*先用椭圆撑开border-bottom,变成上下半圆，然后加两个同心圆*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 120px;
+        height: 60px;
+        background: #fff;
+        border-radius: 100%;
+        border-top: 2px solid #333;
+        border-right: 2px solid #333;
+        border-bottom: 62px solid #333;
+        border-left: 2px solid #333;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: #eee;
+        border-radius: 100%;
+        border: 22px solid #333;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    
+    div:after {
+        content: "";
+        background: #333;
+        border: 22px solid #fff;
+        border-radius: 100%;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

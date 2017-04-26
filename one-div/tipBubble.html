@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-tipBubble</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /* 提示气泡*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 200px;
+        height: 100px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        -ms-border-radius: 20px;
+        border-radius: 20px;
+        border-radius: 20px;
+        background: #333;
+        position: relative
+    }
+    
+    div:after {
+        content: "";
+        border: 0 solid transparent;
+        border-bottom: 30px solid #333;
+        -moz-border-radius: 0 0 0 200px;
+        -webkit-border-radius: 0 0 0 200px;
+        border-radius: 0 0 0 200px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        position: absolute;
+        top: 60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

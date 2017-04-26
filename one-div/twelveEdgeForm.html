@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-twelveEdgeForm</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*十二角形*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 200px;
+        height: 200px;
+        background: #333;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background: #333;
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    div:after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background: #333;
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

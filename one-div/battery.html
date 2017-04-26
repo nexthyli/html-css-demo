@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-battery</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*电池电量*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 100px;
+        height: 50px;
+        border-top: 8px solid #333;
+        border-bottom: 8px solid #333;
+        border-left: 8px solid #333;
+        border-right: 8px solid #333;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 60px;
+        height: 40px;
+        background: #333;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    
+    div:after {
+        content: "";
+        width: 5px;
+        height: 25px;
+        background: #fff;
+        border-top: 5px solid #333;
+        border-bottom: 5px solid #333;
+        border-right: 5px solid #333;
+        position: absolute;
+        top: 6.5px;
+        left: 108px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

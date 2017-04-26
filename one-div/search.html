@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-search</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*搜索*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 35px;
+        height: 35px;
+        background: #fff;
+        border: 10px solid #333;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -o-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        position: relative;
+    }
+    
+    div:after {
+        content: "";
+        width: 40px;
+        height: 10px;
+        background: #333;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 41px;
+        left: 23px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

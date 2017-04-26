@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-warningMark</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*警告标志*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 0px;
+        height: 0px;
+        border-bottom: 60px solid #333;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 4px;
+        height: 25px;
+        background: #fff;
+        position: absolute;
+        left: -2px;
+        top: 20px;
+    }
+    
+    div:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        position: absolute;
+        left: -2px;
+        top: 48px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>

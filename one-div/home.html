@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-home</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*房子*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 60px;
+        height: 50px;
+        background: #333;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 40px solid #333;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        position: absolute;
+        top: -40px;
+        left: -20px;
+    }
+    
+    div:after {
+        content: "";
+        width: 15px;
+        height: 20px;
+        background: #fff;
+        position: absolute;
+        top: 30px;
+        left: 22.5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
