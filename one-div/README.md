@@ -54,7 +54,7 @@
 - **Firefox 2.0+** 
 - **Safari 3.1+**
 - **Opera 10.5+**
-- **IE9+ **
+- **IE9+**
 - **Ios browser(all)**
 - **Android browser(2.1&2.3 with some minor bugs)**
 
@@ -63,10 +63,10 @@
 ##### 变换(transform)
 ##### 浏览器支持
 -  **Chrome 4.0+**
-- **Firefox 3.5+ **
+- **Firefox 3.5+**
 - **Safari 6.0+**
 - **Opera 15.0+**
-- **IE9+ **
+- **IE9+**
 - **Ios browser 6.0+**
 - **Android browser 2.1+**
 
@@ -75,10 +75,10 @@
 ##### 线性渐变(linear-gradient)
 ##### 浏览器支持
 - **Chrome 10.0+**
-- **Firefox 3.6+ **
+- **Firefox 3.6+**
 - **Safari 5.1+**
 - **Opera 15.0+**
-- **IE10+ **
+- **IE10+**
 - **Ios browser 5.0+**
 - **Android browser 4.0+**
 
@@ -87,10 +87,10 @@
 ##### 径向渐变(radial-gradient)
 ##### 浏览器支持
 - **Chrome 10.0+**
-- **Firefox 3.6+ **
+- **Firefox 3.6+**
 - **Safari 5.1+**
 - **Opera 15.0+**
-- **IE10+ **
+- **IE10+**
 - **Ios browser 5.0+**
 - **Android browser 4.0+**
 
@@ -100,10 +100,10 @@
 ##### 阴影(box-shadow)
 ##### 浏览器支持
 - **Chrome 4.0+**
-- **Firefox 4.0+ **
+- **Firefox 4.0+**
 - **Safari 3.1+**
 - **Opera 10.5+**
-- **IE9+ **
+- **IE9+**
 - **Ios browser 3.2+**
 - **Android browser 2.1+**
 
@@ -201,18 +201,21 @@
 ![cover](images/example44.png)
 
 ### 渲染效率
+
 **简单icon对比**
-| 方式 |   渲染 |   绘制  |network |
-| :-------- | --------:| :------: | :------: |
-| One-div |   渲染: 0.339 ms |   绘制: 0.216 ms  |network : 无 |
-| base64  |   渲染: 0.469 ms |   绘制: 0.322 ms  |network : 1ms |
-| 网络请求 |   渲染: 0.310 ms |   绘制: 1.514 ms  |network : 158ms |
+
+| **方式** | **渲染** | **绘制** | **network** |
+|----------|-------|-------|-------|
+| One-div | 渲染: 0.339 ms | 绘制: 0.216 ms | network : 无 |
+| base64  | 渲染: 0.469 ms | 绘制: 0.322 ms | network : 1ms |
+| 网络请求 | 渲染: 0.310 ms | 绘制: 1.514 ms | network : 158ms |
 
 **CSS特性对比**
-| 方式 |   渲染 |   绘制  |network |
-| :-------- | --------:| :------: | :------: |
-| 不使用渐变、阴影等复杂特性 |   渲染: 0.276 ms |   绘制: 0.147 ms  |network : 无 |
-| 使用渐变、阴影等复杂特性   |   渲染: 0.350 ms |   绘制: 0.283 ms  |network : 无 |
+
+| **方式** | **渲染** | **绘制** | **network** |
+|----------|-------|-------|-------|
+| 不使用渐变、阴影等复杂特性 | 渲染: 0.276 ms | 绘制: 0.147 ms | network : 无 |
+| 使用渐变、阴影等复杂特性 | 渲染: 0.350 ms | 绘制: 0.283 ms | network : 无 |
 
 
 

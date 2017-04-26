@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>one-div-display</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: fff;
+    }
+    /*显示器*/
+    
+    div {
+        margin: 250px auto;
+        /*定位使用*/
+        width: 140px;
+        height: 80px;
+        border-top: 8px solid #333;
+        border-bottom: 20px solid #333;
+        border-left: 8px solid #333;
+        border-right: 8px solid #333;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    div:before {
+        content: "";
+        width: 40px;
+        height: 5px;
+        background: #333;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+    
+    div:after {
+        content: "";
+        width: 70px;
+        height: 10px;
+        background: #333;
+        position: absolute;
+        top: 105px;
+        left: 35px;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
